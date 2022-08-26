@@ -37,12 +37,12 @@ RegisterCommand("removeplate", function()
         else
             -- Notification
 			-- exports["mythic_notify"]:SendAlert("error", "No vehicle nearby.") Mythic_Notification
-			TriggerEvent('esx:showNotification', '~r~ No vehicle nearby.')
+			 print('Zadne vozidlo pobliz')
         end
     else
         -- Notification
 		-- exports["mythic_notify"]:SendAlert("error", "You already have a licence plate on you.") Mythic_Notification
-		TriggerEvent('esx:showNotification', '~r~ You do not have a licence plate on you.')
+			 print('SPZ Neni u tebe')
     end
 end)
 
@@ -81,17 +81,17 @@ RegisterCommand("putplate", function()
 		else
 			-- Notification
 			-- exports["mythic_notify"]:SendAlert("error", "This plate does not belong here")
-			TriggerEvent('esx:showNotification', '~r~ This plate does not belong here')
+			 print('SPZ SEM NE')
 		end
         else
             -- Notification
 			-- exports["mythic_notify"]:SendAlert("error", "No vehicle nearby.") Mythic_Notification
-			TriggerEvent('esx:showNotification', '~r~ No vehicle nearby.')
+			 print('Vozidlo X')
         end
     else
         -- Notification
 		-- exports["mythic_notify"]:SendAlert("error", "You already have a licence plate on you.") Mythic_Notification
-		TriggerEvent('esx:showNotification', '~r~ You do not have a licence plate on you.')
+			 print('SPZ X')
     end
 end)
 
